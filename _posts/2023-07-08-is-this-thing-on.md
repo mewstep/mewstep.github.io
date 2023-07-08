@@ -1,6 +1,6 @@
 ---
-title: "Is this thing on?"
-date: 2023-07-08T16:46:00-04:00
+title: "is this thing on"
+date: 2023-07-08
 categories:
   - blog
 tags:
