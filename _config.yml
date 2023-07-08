@@ -113,5 +113,5 @@ tag_archive:
   type: liquid
   path: /tags/
 
-imagesurl: "/mysite/img/"
-thumbsurl: "/mysite/thumbs/"
+imagesurl: "/assets/images/gallery/"
+thumbsurl: "/assets/images/gallery/thumbs/"
