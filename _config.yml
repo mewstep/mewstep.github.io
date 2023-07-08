@@ -112,3 +112,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+imagesurl: "/mysite/img/"
+thumbsurl: "/mysite/thumbs/"
