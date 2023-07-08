@@ -3,4 +3,4 @@ permalink: /gallery/
 title: "Gallery"
 ---
 
-{% include my-gallery.html folder="assets/images/gallery" %}
+{% include image-gallery.html folder="/uploads/album" %}
