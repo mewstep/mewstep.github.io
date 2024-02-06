@@ -1,17 +1,15 @@
 ---
 title: "is this thing on"
-date: 2023-07-08
+date: 2024-02-04
 categories:
   - blog
 tags:
 - beef
 ---
 
-look man. im not a blogger. but i do want a website, and this is the easiest one to set up (that doesnt look like total garbage, anyway)
+i'm no blogger, but i do want a website. jekyll is a pretty easy way to set one up!
 
-at one point i saw my future as being a web designer, but luckily i got over that after realising i could do literally anything eles. this leaves me in an awkward middle place between not knowing a thing about web design, and knowing just enough to be annoyed by everything.
+why arent there any simple graphical web editors out there!???
+I know there's squarespace, but that costs money, and there's wix which is free, but feels dirty
 
-why is it that there are no **visual** static web designers for free? Like, why can I not just drag and drop graphics and shit onto a canvas? why am I having to write css files? (note: i know all of this is possible, I just don't want to pay money - AND, these tools are usually designed for like, proper website use. I don't want to make a store! I just want to host pretty pictures!)
-
-Anyway, eventually you'll find me hosting my art on here somehow. That's the plan, anyhow. I'm already on places like Artstation, but I wanna just be able to give someone a link that belongs to me, that goes to a place that belongs to me, etc. You get me? Linking to a social feels unstable.
-
+whagever
