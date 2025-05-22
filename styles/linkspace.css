@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+body{
+  background-image: url("/media/stars3.gif");
+  animation: waving 10s linear infinite;
+  background-size: 128px 128px;
+  
+  font-family: 'Roboto Mono', monospace;
+}
+
+@keyframes waving{
+  0%    {background-position: 0px 0px;}
+  100%   {background-position: -128px -128px;}
+}
+
+
+#header{
+  background-color:black;
+  color:white;
+  margin-top:0;
+  font-size:12px;
+  
+  
+  
+  #goback{
+    float: right;
+    padding: 0px 8px 0px 8px;
+    
+    text-decoration:none;
+    color: white;
+    
+    &:hover{
+      color: black;
+      background-color: white;
+}     
+  }
+  
+  
+}
+
+#linkbox{
+  display:block;
+  position: absolute;
+  
+  width: 500px;
+  height: 200px;
+  
+  top: calc(50% - 100px);
+  right: calc(50% - 250px);
+  
+  text-align: center;
+  
+  a{
+    display: inline-block;
+    
+    &:hover{
+      filter: brightness(50%);
+    }
+    
+  }
+}

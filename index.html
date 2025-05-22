@@ -1,1 +1,67 @@
-wip :3
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kat's page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+
+
+
+
+    <div id="header">
+        <a id="site-title" href="?c=home">kats website :)</a>
+        <nav>
+            <a href="https://itkat.neocities.org">home</a>
+            <a href="?c=about">about</a>
+            <a href="/pages/linkspace.html">linkspace</a>
+        </nav>
+    </div>
+    <div id="middle">
+        <div id="void"></div>
+        <div id="content">
+            <object id="contentarea" data="./home.html"></object>
+        </div>
+        <div id="void"></div>
+    </div>
+    <div id="footer">
+        <p id="copyright">copyright nobody forever :3</p>
+        <!-- NEWS!!!! -->
+        <div id="news"><marquee behavior="scroll" direction="left" scrollamount="12">
+        <p>help! help me!!!!! heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeelp!!!!!!!</p>
+        <p>news item 2: there is news. so much news. holy cow.</p>
+        <p>news item 3: wow! no more news forever.</p>
+        <p>JUST KIDDING!!!!!!!!!!!!! MORE NEWS!</p>
+        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHHHHHH</p>
+        </marquee></div>
+        
+
+    </div>
+
+    <script>
+        //get data from the url
+        //format: www.example.com/asdf?content=page_title
+        //where content = the name of a .html file without the ".html"
+        var url_string = window.location; 
+        var url = new URL(url_string);
+        var content = url.searchParams.get("c");
+        
+        if(content!=null){
+          var newURL = content + ".html" //add ".html" back to the end
+          newURL = "./pages/" + newURL;
+        }
+        else{
+          newURL = "./pages/home.html"
+        }
+        
+        
+
+        var contentarea = document.getElementById("contentarea");
+        contentarea.setAttribute('data', newURL);
+
+        //var container = document.getElementById("content");
+        //container.innerHTML = container.innerHTML; //force redraw
+    </script>
+</body>
+</html>

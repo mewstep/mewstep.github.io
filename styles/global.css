@@ -1,0 +1,11 @@
+@import url("/styles/font.css");
+
+/* custom colors */
+:root{
+  --kDarkest: #000000;
+  --kDark: #30373D;
+  --kMid: #A557CC;
+  --kLight: #FFFFFF;
+}
+/*to use: var(--kDark); */
+

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* custom colors */
+:root{
+  --kDarkest: #000000;
+  --kDark: #30373D;
+  --kMid: #A557CC;
+  --kLight: #FFFFFF;
+  
+  scrollbar-width: none;
+}
+/*to use: var(--kDark); */
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#header, #footer{
+    position: fixed;
+    width: 100%;
+    background-color: var(--kDarkest);
+    z-index: 999;
+}
+#header{
+    height: 32px;
+    
+    #site-title{
+        display: inline-block;
+        width: 200px;
+        font-size: 18px;
+        margin:0;
+        padding:2px 20px 2px 20px;
+        text-decoration: none;
+        color: var(--kLight);
+    }
+
+    nav{
+        float: right;
+        padding: 4px 20px 4px 20px;
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color: var(--kLight);
+            &:hover{
+                filter:opacity(60%);
+            }
+        }
+    }
+}
+#footer{
+    bottom: 0px;
+    height: 48px;
+    
+    #copyright{
+      display:block;
+      position:absolute;
+      right:0px;
+      
+      font-size: 14px;
+      margin:0;
+      padding:14px 10px 6px;
+      color: gray;
+    }
+    #news{
+      display:block;
+      position:absolute;
+      
+      margin:auto;
+      padding-top:10px;
+      left:0;
+      right:0;
+      text-align: center;
+      color:gray;
+      width:400px;
+      marquee p
+      {
+        display: inline;
+      }
+    }
+}
+
+#middle{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+#void{
+    background-image: url("/media/thing2.png");
+    background-repeat:repeat;
+    
+    animation: scrolling 5s linear infinite;
+    
+    /*background-color: var(--kMid);*/
+}
+@keyframes scrolling{
+      from{
+        background-position: 0 0;
+      }
+      to{
+        background-position: 128px 128px;
+      }
+    } 
+#content{
+    margin:0;
+    box-sizing:border-box;
+    z-index: 200;
+    padding: 40px;
+    box-shadow: 0px 0px 67px 6px rgba(0,0,0,0.75);
+    background-color: var(--kDark);
+    #contentarea{
+      margin:0;padding:0;
+      width:100%;height:100%;
+    }
+}
+
+#innercontent{
+  
+  color: var(--kLight);
+  text-align:justify;
+  word-wrap:break-word;
+  
+  #pagetitle{
+    margin-top:0;
+  }
+}
